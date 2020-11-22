@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Environmental Justice</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="../res/css/style.css" />
+        <link rel="stylesheet" href="../res/css/card.css" />
+        <link rel="shortcut icon" href="https://www.gatech.edu/sites/all/themes/gt_tlw/favicon.ico" type="image/vnd.microsoft.icon">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js" integrity="sha256-jyHh7xruaFLUoKPPnsSwEvYrBnzJczScRNnuh4Ysblc=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js" integrity="sha256-CfyPGYLRQ4v1O+mZa5ocQglABXGuaZmmfe8awy8Fxis=" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" style="color: rgb(216, 189, 38)" href="/">Environmental Justice</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/atlanta">In Atlanta <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/programs">Programs</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="alert('Search Functionality Coming Soon!')">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class='container'>
+            <h2>Air Polution in Atlanta</h2>
+            <a href="https://earthjustice.org/news/press/2011/communities-of-color-poverty-bear-burden-of-air-pollution">Original Article</a>
+            <div class='long-text'>
+                Air pollution is a large issue for many citizens around Atlanta and throughout all of Georgia that live below the poverty line. 
+                Toxic gasses from coal fired power plants are produced all over EPA region 4, which includes Georgia. African American communities 
+                also suffer disproportionately from this issue. In 2011, the EPA proposed a plan to cut down on allowed toxic emissions from coal 
+                powered plants from all over the state. It is estimated that an african american community in Georgia was 30% more likely to be 
+                affected by a coal plant’s toxins than any other community. It was estimated that this plan would save 17,000 lives and prevent over 
+                100,000 cases of asthma. The expected value of these improvements yearly was around 100 billion a year. To put this in perspective, 
+                this article states that for every dollar spent on this beneficial project, the average american citizen would see an increase of around 
+                $10 in health benefits. This movement has been extraordinarily helpful to Georgians and people living in the Atlanta area since Georgia 
+                is one of the top 5 states in number of coal based power plants near low income communities. New limitations on power plant location have 
+                also been established. New factories must be built a certain distance away from any community to safeguard their health. This event can be 
+                seen as a great win for champions of environmental justice. Because they brought this problem to the center stage, new laws have been 
+                created to help them and protect the right of every person to equal health. 
+            </div>
+        </div>
+
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyAt-iyjcsqe7Kxd5U5kkwstlhqC7fm58mU",
+                authDomain: "gatech-environmental-justice.firebaseapp.com",
+                databaseURL: "https://gatech-environmental-justice.firebaseio.com",
+                projectId: "gatech-environmental-justice",
+                storageBucket: "gatech-environmental-justice.appspot.com",
+                messagingSenderId: "264244857400",
+                appId: "1:264244857400:web:e031607a29fa73ffe474cd",
+                measurementId: "G-8YKFD5D34S"
+            };
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script src="../res/js/frontend.js"></script>
+
+        <template>
+
+        </template>
+    </body>
+</html>

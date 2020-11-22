@@ -1,0 +1,18 @@
+.event {
+    width: 80%;
+    background-color: rgb(209, 205, 123);
+    margin-left: 10%;
+    margin-bottom: 5vh;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.event h3::after {
+    display: block;
+    height: 3px;
+    background-color: #000000;
+    content: " ";
+    width: 100%;
+    margin: 0 auto;
+}
+
