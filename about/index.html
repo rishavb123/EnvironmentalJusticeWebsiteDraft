@@ -6,9 +6,8 @@
         <title>Environmental Justice</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="../res/css/style.css" />
-        <link rel='stylesheet' href='style.css' />
-        <link rel="shortcut icon" href="https://www.gatech.edu/sites/all/themes/gt_tlw/favicon.ico" type="image/vnd.microsoft.icon">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js" integrity="sha256-jyHh7xruaFLUoKPPnsSwEvYrBnzJczScRNnuh4Ysblc=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js" integrity="sha256-CfyPGYLRQ4v1O+mZa5ocQglABXGuaZmmfe8awy8Fxis=" crossorigin="anonymous"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
@@ -19,8 +18,8 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" style="color: rgb(216, 189, 38)" href="/">Environmental Justice</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">Environmental Justice</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,10 +33,16 @@
                         <a class="nav-link" href="/about">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/atlanta">In Atlanta</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/events">Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/programs">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/outreach">Outreach</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -46,187 +51,103 @@
                 </form>
             </div>
         </nav>
-        
-        <h2>About Environmental Justice</h2>
 
-        <p class='text'>Georgia Tech is home to one of the most diverse student populations in the entire state of Georgia. Yellow Jackets come from all over 
-            the world, and our common purpose to create the future is what unites us. Just like how Georgia Tech is home to us, Atlanta is home to Georgia 
-            Tech. Members of the Atlanta community, predominantly poor African American families, suffer from the injustices of inequitable environmental 
-            protection and regulation. As Yellow Jackets, if we are to build the future, it starts with building up the community around us by seeking 
-            environmental justice.</p>
-
-        <div class='image-container'>
-            <div>
-                <img src='../res/imgs/about/food.png' />
+        <div class='container'>
+            <h2>Overview</h2>
+            <div class="long-text">
+                The Environmental Protection Agency defines environmental justice as, “the fair treatment and meaningful involvement of all people regardless of race, color, national origin, or income, with respect to the 
+                development, implementation, and enforcement of environmental laws, regulations, and policies.” In an ideal setting, environmental justice seems like a basic human right. People should have the right to live 
+                in a clean and non-hazardous environment. However, environmental injustice is rampant and is caused by unequal distribution of wealth and resources, location, and environmental racism. These factors influence 
+                how environmental policies are made and mandated throughout communities. As a result, a paradigm is formed in which the group in power (subconscious or not) favors their own populations over others. 
+                This is the cause of many of the environmental injustices seen in small communities across the nation.
+            </div>
+            <h2>History / Origins of Environmental Justice</h2>
+            <div class='long-text'>
+                The environmental justice movement was started by people of color to address the environmental protection disparities within their communities. 
+                Martin Luther King Jr., leader of the Civil Rights Movement, kicked off the Environmental Justice movement in 1968 when he visited Memphis, Tennessee to give his support to the ongoing sanitation strike. 
+                King advocated for better wages and working conditions for African American sanitation workers. 
+                Just a couple of months later, King would be assassinated in that very town. Some time would pass before another event crucial to the environmental justice movement would occur. 
+                In 1982, protests sprung up against the polychlorinated biphenyl (PCB) landfill that was to be constructed within a predominantly African American community. 
+                These protests prompted the U.S. General Accounting Office to conduct a study that would ultimately verify the existence of environmental racism through empirical evidence. 
+                Ever since then, the issue of environmental justice rose from the communal level to the national level. In the decades following the GAO study, hundreds of more studies would be conducted, 
+                and special interest groups such as West Harlem Environmental Action and the Indigenous Environmental Network would form around the environmental justice movement. 
+                In 2010, The EPA established environmental justice as an agency-wide priority and is working to demonstrate significant progress toward environmental challenges by 2020. 
+            </div>
+            <h2>Environmentalism vs Environmental Justice</h2>
+            <div class="long-text">
+                Given their similar naming, environmentalism and environmental justice share a lot of similar qualities, particularly dealing with the condition of our environment. 
+                Simply put, environmental justice combines social justice with environmentalism. An environmentalist considers the wellbeing of the environment, but adding social 
+                justice to the mix makes the environmentalist consider how environmental woes affect impoverished communities. These communities, particularly consisting of minority groups, 
+                have historically lived closer to sources of pollution due to the prevailing economic disparities between people of color and whites. 
+                Adding to this the upcoming threat of climate change, environmental justice is necessary to protect groups of people that are significantly more exposed to environmental threats. 
+                Environmentalism acknowledges the problems that our planet faces and aims to solve them, but environmental justice takes environmentalism one step further by considering how 
+                environmental issues are simultaneously social issues for which certain groups are disproportionately affected.
+            </div>
+            <h2>Social Effects of Environmental Justice</h2>
+            <div class="long-text">
+                The color of a person's skin changes what environment they must experience throughout their lives. It influences whether they get to breath clean air or not. It influences the amount of trees
+                in their area. As unrelated as the color of a person's skin sounds to all these things, they are all true, and we can see evidence of this on this <a href="https://dsl.richmond.edu/panorama/redlining/#loc=12/33.731/-84.429&city=atlanta-ga">website</a>, 
+                which shows how environmentally safe areas are paired with descriptions of the area. There are many factors that take part into determining the environmental problems you
+                will have to face during your life, including Wealth / Location, Race, and Industry. If this seems unjust to you, it is becuase it is. Everyone deserves the same right to breathe clean air and 
+                the goal is for that idea to become reality.
+            </div>
+            <br />
+            <h3>Wealth and Location</h3>
+            <div class="long-text">
+                People and communities with lower social-economic status (SES) are more commonly exposed to harmful air pollutants such as particulate matter (PM), NOx, and SO2. It is not a coincidence that lower 
+                SES individuals are exposed to these things because these pollutants are the typical products of industrial emissions and for decades poor zoning laws have allowed industry to pollute right next 
+                to lower SES communities. Though Atlanta has earned the nickname “the City in a forest” for its relatively dense tree population as compared to other major cities, the underlying truth is that tree 
+                density has a strong positive correlation with income. Compare the map of the Atlanta city school district by color-coded by annual income and the map of tree cover, and one can see that the red areas 
+                (displaying low income and low tree cover) line up fairly well. This observation taints Atlanta’s otherwise positive nickname because it reveals that the benefits that Atlanta’s tree cover provides are 
+                not shared by all Atlantans. Environmental justice is a matter of recognizing that the solution to pollution must target areas that are at the source of pollution.
             </div>
             <div>
-                <img src='../res/imgs/about/planting.png' />
+                <img src="../res/imgs/social/salary-location.png" />
+                <img src="../res/imgs/social/tree-location.png" />
+            </div>
+            <div class='long-text'>
+                Looking at these images (and the link to the maps above the Wealth and Location section), it is clear that race and wealth are directly correlated to the number of trees in the area.
+                The red sections are around the same areas in both graphs while the wealthier people are usually in the green sections for the tree cover image. Something must be done to balance the scales between these 
+                two groups since after all, we are all human and deserve to live in an environmentally safe area.
+            </div>
+            <h3>Race</h3>
+            <div class='long-text'>
+                Race is a hallmark of environmental justice that has paralleled civil rights at both a federal and community level since the 60’s. It plays a major role in when politicians decide where landfills, 
+                incinerators, and other similar sites are built as well as how environmental policies are mandated. Numerous studies provide evidence that race is the leading factor in environmental decision 
+                making when officials must decide who will benefit and who will be put at risk. Whether that decision is subconscious or not, minority populations tend to be the groups put at risk. To combat 
+                this environmental inequality, the government commissioned the environmental protection agency to handle civil matters regarding environmental standards. Despite this effort, African Americans 
+                and Latino communities, especially those in less affluent areas, do not see the same level of protection and consideration given to White communities. An example of this inequity can be seen in 
+                Los Angeles where more than 71 percent of African Americans and 50 percent of Latinos live in the regions with the most polluted air. At the same time, only 34 percent of Whites live in similarly 
+                polluted areas. This is where the concept of environmental racism becomes apparent in our society. Environmental racism is “any policy, practice, or directive that differentially affects or 
+                disadvantages (whether intended or unintended) individuals, groups, or communities based on race or color” (Bullard 2001). This is a clear issue as it impacts the majority of the nation, however, 
+                the negative effects of environmental policies on stratified groups continues to go unnoticed, to be disregarded, and to stay unchanged. Policy makers should not be deciding who should gain and 
+                who should lose, but rather how all the communities can benefit and share the burden equally.
+            </div>
+            <h3>Industry</h3>
+            <div class='long-text'>
+                The industrial sector is vital to people across the globe. It is responsible for the production and distribution of an immeasurable amount of goods and without it, societal growth would come to 
+                a near standstill. However, industry is also responsible for the depreciation of clean and natural landscapes which pollutes the environment and puts people at risk. The environment and industry 
+                are not compatible, and industry is growing faster than the environment can handle. As with other animals, people are put at risk when industrial sites are built near communities. This often leads 
+                to air being filled with dangerous chemicals, water becoming undrinkable, and waste spreading throughout the community. The problem is only exacerbated by the fact that most industrial sites are 
+                built in regions with a higher population of Black or Latino people which concentrates the pollution to these areas. The policies currently in place are ineffective when it comes to protecting 
+                these groups from the negative affects of industrialization and more protection needs to be given to citizens in order to protect them from these pollutants. 
             </div>
         </div>
 
-        <h2>Humble Beginnings</h2>
-
-        <p class='text'>The Environmental Justice movement was born out of the Civil Rights movement when Martin Luther King, Jr. lent his aid to the Sanitation Strike of 1968. The night before MLK’s assassination, he bravely told a 
-            group of sanitation workers that “we’ve got to give ourselves to this struggle until the end.” Those fateful words would mark the beginning of a historic movement to ensure equity for all people in terms of environmental 
-            protection. The year 2018 marked the 50th anniversary of the Environmental Justice movement, and though a lifetime of progress has been made to bring about environmental justice, we must remember that there is still a lot 
-            of work left to do.</p>
-
-        <div class='image-container'>
-            <div>
-                <img src='../res/imgs/about/humble-begining.png' />
-            </div>
-        </div>
-
-        <h2>Why It Matters?</h2>
-
-        <p class='text'>Environmental injustices in Atlanta should matter to Georgia Tech students for several reasons. Perhaps the most prominent reason is that we all live near the heart of Atlanta; whatever happens to the city, happens 
-            to us. It is important that GT students care about their immediate surroundings. Looking at the maps on this page dealing with tree cover, income, and environmental status, there is a clear correlation between these factors. 
-            The mission statement of Georgia Tech includes making a meaningful contribution to society, including our immediate surroundings. The overlap of the surrounding graphs makes it clear that certain areas of Atlanta are underserved 
-            and suffering from poor environmental conditions. Students should care because these people are suffering all around us and as students of Georgia Tech, it is our duty to do whatever we can to help those suffering.</p>
-
-        <div id='maps-container'>
-            <div class='internal-maps-container'>
-                <div class='img-overlay-container'>
-                    <img src='../res/imgs/about/maps/hazardous.png'>
-                    <div class='img-overlay'>
-                        <div class='overlay-text'>
-                            This map shows the environmentally hazardous areas in Atlanta. For more information go to the <a href="https://dsl.richmond.edu/panorama/redlining/#loc=12/33.731/-84.429&city=atlanta-ga">interactive map</a>.
-                        </div>
-                    </div>
-                </div>
-                <div class='img-overlay-container'>
-                    <img src='../res/imgs/about/maps/salary-location.png'>
-                    <div class='img-overlay'>
-                        <div class='overlay-text'>
-                            This map shows the wealth distribution across Atlanta, which has correlations with the tree coverage and hazardous area maps.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class='img-overlay-container'>
-                <img src='../res/imgs/about/maps/tree-location.png'>
-                <div class='img-overlay'>
-                    <div class='overlay-text'>
-                        This map shows the percent tree coverage around Atlanta. 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <h2 id='atlanta'>Environmental Injustice in Atlanta</h2>
-
-        <div class='cases'>
-            <div class='case'>
-                <img class='case-img left' src='../res/imgs/about/cases/air-pollution.png' onclick="(() => $('#air-pollution-modal').modal())()" />
-                <div class='case-summary'>
-                    Currently, one of the largest environmental justice issues facing Atlanta is air pollution. Impoverished communities tend 
-                    to live closer to sources of air pollution. While it is a highly dangerous problem, people have been stepping up in recent 
-                    years with new ideas to combat this issue. Click the image to the left for more information.
-                </div>
-                <div class="modal" id='air-pollution-modal' tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Air Pollution</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Air pollution is a large issue for many citizens around Atlanta and throughout all of Georgia that live below the 
-                                    poverty line. Toxic gases from coal-fired power plants are produced all over EPA region 4, which includes Georgia. 
-                                    African American communities suffer disproportionately from this issue due to their proximity to sources of pollution. 
-                                    In 2011, the EPA proposed a plan to cut down on toxic emissions from coal-powered plants across the state. It is estimated that
-                                    African American communities in Georgia are 30% more likely to be affected by a coal plant’s toxins than any other 
-                                    community. It was estimated that this plan would save 17,000 lives and prevent over 100,000 cases of asthma. The 
-                                    expected value of these improvements was around $100 billion a year. To put this in perspective, this article 
-                                    states that for every dollar spent on this beneficial project, the average american citizen would see an increase of 
-                                    around $10 in health benefits. This movement has been extraordinarily helpful to Georgians and people living in the 
-                                    Atlanta area since Georgia is one of the top 5 states in number of coal-based power plants near low income communities. 
-                                    New limitations on power plant location have also been established. New factories must be built a certain distance away 
-                                    from any community to safeguard their health. This event can be seen as a great win for environmental justice. 
-                                    Because the EPA brought this problem to the center stage, new laws have been created to help protect the right of 
-                                    every person to equal health.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class='case'>
-                <div class='case-summary'>
-                    Atlanta faces issues in abandoned housing and poorly kept properties as a result of inequity and improper waste management. 
-                    Malpractice in waste disposal and a lack of infrastructure to support waste management are key sources of urban dereliction in Atlanta.
-                    Click the image to the right for more information.
-                </div>
-                <img class='case-img right' src='../res/imgs/about/cases/house.png' onclick="(() => $('#house-modal').modal())()" />
-                <div class="modal" id='house-modal' tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Abandoned Housing</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Urban dereliction is a major problem within the Atlanta community. It is the result of unequally distributed wealth and 
-                                    poor environmental standards which cause properties to become unwanted and abandoned. This in turn lowers the property
-                                    value of the communities and members within the communities are forced to live with uncollected trash and other hazardous waste. 
-                                    These issues emanate from discrimination in policy making in regards to environmental standards. There is a clear 
-                                    difference in the amount of trees and other plants in areas that have more white people than areas with more people of 
-                                    color. That is, there are more trees in places with more white residences. With pollutants, the opposite is true where 
-                                    we see people of color are in the same areas where dumps and waste facilities are located. It is evident that one of 
-                                    the key issues is the amount of litter and illegal dumps found in these communities as 71% of surveyed people living in 
-                                    neighborhoods with high dereliction said that the trash was a problem for their community. The same survey 
-                                    was done with people living in areas with low levels of dereliction and only 20% reported trash as an issue for their 
-                                    community. From this, there is a connection between how waste is managed in comparison the demographics of the area, which shows 
-                                    the ongoing environmental injustice occurring in Atlanta.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class='case'>
-                <img class='case-img left' src='../res/imgs/about/cases/river.png' onclick="(() => $('#river-modal').modal())()" />
-                <div class='case-summary'>
-                    There are rivers around Atlanta which are still impacted by the racist environmental practices from the 20th century. 
-                    These rivers tend to flow through black communities and pollute these communities with toxic waters.
-                    Click the image to the left for more information.
-                </div>
-                <div class="modal" id='river-modal' tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Polluted Rivers</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>In Atlanta, environmental injustices from the 1980s are still plaguing the community, and the rivers around it are living proof 
-                                    of that. In 2010, the river at Panola Shoals was deemed unfit for people to swim in due to the amount of pollution in the river. 
-                                    It was found to be full of sewage waste and trash which puts communities around it at risk of dangerous diseases. This river was 
-                                    used as an outlet for sewage and other hazardous wastes for facilities from the mid 1900s. This same river also flows through many 
-                                    majority black communities and posed even more of a risk then before reforms were put into place to reduce the pollution going into 
-                                    it. Nevertheless, the origins of this river’s drastically low health standards are the result of racial discrimination and a lack of 
-                                    efficacy in the political decision making which created these waste paths. When the EPA became involved in 1998, Atlanta was required 
-                                    to fix the overflows of sewage and trash created by the river costing over $4 billion dollars. In the decree, however, only $25 million 
-                                    dollars needed to be spent on communities with larger populations of minorities and it simply stated that there must be “particular 
-                                    emphasis... placed on input from minority communities adjacent to the designated streams and other streams affected by the discharges 
-                                    from the Defendant’s CSO control facilities.” This decree in practice did very little to rectify the issues of environmental injustice seen 
-                                    in the Atlanta rivers and the river’s current state is proof of that. It is clear that waste management and race are connected and minorities 
-                                    are typically used as scapegoats for the pollution placed in their communities.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <script src='../res/js/frontend.js'></script>
-
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyAt-iyjcsqe7Kxd5U5kkwstlhqC7fm58mU",
+                authDomain: "gatech-environmental-justice.firebaseapp.com",
+                databaseURL: "https://gatech-environmental-justice.firebaseio.com",
+                projectId: "gatech-environmental-justice",
+                storageBucket: "gatech-environmental-justice.appspot.com",
+                messagingSenderId: "264244857400",
+                appId: "1:264244857400:web:e031607a29fa73ffe474cd",
+                measurementId: "G-8YKFD5D34S"
+            };
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script src="../res/js/frontend.js"></script>
     </body>
 </html>

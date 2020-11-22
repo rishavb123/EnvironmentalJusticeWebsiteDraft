@@ -33,11 +33,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/atlanta">In Atlanta</a>
-                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/events">Events <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/atlanta">In Atlanta <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/events">Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/programs">Programs</a>
@@ -53,27 +53,26 @@
             </div>
         </nav>
 
-        <div class="section">
-            <h1>Events</h1>
-            <div id='gatech-section'>
-                <h2>Gatech Affiliated Events</h2>
-            </div>
-            <div id='community-section'>
-                <h2>Community Events</h2>
+        <div class='container'>
+            <h2>Air Polution in Atlanta</h2>
+            <a href="https://earthjustice.org/news/press/2011/communities-of-color-poverty-bear-burden-of-air-pollution">Original Article</a>
+            <div class='long-text'>
+                Air pollution is a large issue for many citizens around Atlanta and throughout all of Georgia that live below the poverty line. 
+                Toxic gasses from coal fired power plants are produced all over EPA region 4, which includes Georgia. African American communities 
+                also suffer disproportionately from this issue. In 2011, the EPA proposed a plan to cut down on allowed toxic emissions from coal 
+                powered plants from all over the state. It is estimated that an african american community in Georgia was 30% more likely to be 
+                affected by a coal plant’s toxins than any other community. It was estimated that this plan would save 17,000 lives and prevent over 
+                100,000 cases of asthma. The expected value of these improvements yearly was around 100 billion a year. To put this in perspective, 
+                this article states that for every dollar spent on this beneficial project, the average american citizen would see an increase of around 
+                10$ in health benefits. This movement has been extraordinarily helpful to Georgians and people living in the Atlanta area since Georgia 
+                is one of the top 5 states in number of coal based power plants near low income communities. New limitations on power plant location have 
+                also been established. New factories must be built a certain distance away from any community to safeguard their health. This event can be 
+                seen as a great win for champions of environmental justice. Because they brought this problem to the center stage, new laws have been 
+                created to help them and protect the right of every person to equal health. 
             </div>
         </div>
 
-        <template id="event-template">
-            <div class="event">
-                <h3>{{title}}</h3>
-                <a href="{{link}}">More Information</a>
-                <p>When: {{when}}</p>
-                <p>Where: {{where}}</p>
-                <p>{{description}}</p>
-            </div>
-        </template>
-
-        <script defer>
+        <script>
             const firebaseConfig = {
                 apiKey: "AIzaSyAt-iyjcsqe7Kxd5U5kkwstlhqC7fm58mU",
                 authDomain: "gatech-environmental-justice.firebaseapp.com",
@@ -88,11 +87,6 @@
             firebase.analytics();
         </script>
         <script src="../res/js/frontend.js"></script>
-        <script src="../res/js/load_template_from_firestore.js"></script>
-        <script>
-            loadTemplateFromFirestore('#event-template', 'events', '#gatech-section', ['affiliated', '==', true]);
-            loadTemplateFromFirestore('#event-template', 'events', '#community-section', ['affiliated', '==', false]);
-        </script>
 
         <template>
 
